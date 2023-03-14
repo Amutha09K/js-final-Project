@@ -1,0 +1,1272 @@
+html, body {
+    height: 100%;
+    width: 99.8%;
+    background-color: #009CD7;
+    color: white;
+    font-family: sans-serif;
+  }
+  .example::-webkit-scrollbar {
+      display: none;
+  }
+
+  .parent
+  {
+    height: 513vh;
+    /* height: 510vh; */
+    width: 100.051vw;
+    overflow: hidden;
+    margin-left: -9px;
+  }
+
+  /* feedback container */
+  #feedBackContainer
+  {
+    display: none;
+  }
+  /* Menu */
+  .menu
+  {
+    /* display: block; */
+    display: block;
+    transition-property:transform;
+    height: 9vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    transform:translateX(34.5%);
+    transition: all 0.5s;
+  }
+  .menu-list
+  {
+    width: 538px;
+    background-color: black;
+    cursor: pointer;
+    list-style: none;
+    text-transform: uppercase;
+    transition: all 3s;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu-list li
+  {    
+      padding: 2% 3%;
+      font-size: 20px;
+  }
+  .menu .left
+  {
+    transition-delay: 12s;
+    width: 5%;
+    height: 26%;
+    background-color: black;
+    transform: rotate(11deg) translate(-4%,-126%);
+    position: absolute;
+    z-index: -1;
+  }
+  .menu .right
+  {
+    transition-delay: 12s;
+    width: 5%;
+    height: 26%;
+    background-color: black;
+    transform: rotate(348deg) translate(475px, 68px);
+    position: absolute;
+    z-index: -1;
+  }
+  #menuIcon
+  {
+    background: url(/img/logo-cm@2x.png) no-repeat black;
+    position: fixed;
+    transform: translate(47vw, 0vh) scale(0.65);
+    z-index: 101;
+    display: none;
+    height: 10vh;
+    width: 6vw;
+    border-radius: 5vw;
+    background-size: 3.5vw;
+    background-position: 1.2vw 1vh;
+  }
+
+  #menuIcon:hover
+  {
+    background-color: #333;
+  }
+  a{
+        text-decoration: none;
+      color: white;
+  }
+  .menu-list li a:hover{
+        color: #61f0ff;
+  }
+  
+  .welcome
+  {
+    padding-top: 13vh;
+  }
+  .welcome-text
+  {
+      font-family: gothamlight, arial, sans-serif, gothambold;
+      font-size: 5.6vh;
+      line-height: 69px;
+      text-align: center;
+      margin-bottom: 0%;
+  }
+  .subtitle
+  {
+      font-size: 2vh;
+      text-align: center;
+      font-weight: 200;
+      line-height: 0px;
+  }
+  .light
+  {
+    animation: lightsAnimation 1.8s infinite ease-in-out;
+    width: 100%;
+    transform: translate(0%, -35%);
+  }
+  .buildings
+  {
+    position: absolute;
+    top: 31vh;
+    left: 0vh;
+    width: 100vw;
+    height: 27vh;
+    transform: scaleY(1.2);
+  }
+  .home-text
+  {
+    background-color: black;
+    width: 101.5vw;
+    text-align: center;
+    padding: 1vh 0vh 0vh 0vh;
+    transform: translate(-0.9vw, -17.189vh);
+  }
+  .home-text h2
+  {    
+    padding: 5.55vh 0px 0px 1vh;
+    font-size: 1.3vw;
+  }
+  .Hello
+  {    
+    width: 35%;
+    color: white;
+    font-size: 21px;
+    padding-left: 32%;
+    margin-top: 0%;
+    font-family: system-ui ,sans-serif;
+    font-weight: 100;
+  }
+  .Room 
+  {
+    height: 70%;
+    background-color: black;
+    margin-left: -1%;
+ }
+ #Room 
+ {
+    width: 101%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    /* transform: translate(0%, -27.5%); */
+    transform: translate(0%, -11.1%);
+    height: 176vh;
+ }
+  .room-div 
+ {
+    /* height: 72%; */
+    height: 51vh;
+    width: 91vw;
+    transform:translate(-19.5%, 18.3%) rotate3d(-7, -200, 0, 24deg) rotateY(97deg) scaleX(3);
+ }
+  .computerScene {
+    background: url(/img/who/computer-scene.svg) no-repeat;
+    height: 18vh;
+    transform: translate(10px, 10px);
+    width: 24vw;
+    background-size: 17.8vw;
+    transform: translate3d(853px, 139px, 0px);
+    background-position: 0px -1.11vh;
+    position: relative;
+}
+.left-wall
+  {
+    height: 15.5%;
+    width: 12%;
+    transform: translate3d(258%, -285%, 40px) scale(6.2) scaleY(1.5) scaleX(1.8) rotateY(17deg);
+    background: url(/img/who/backwall.svg) repeat-y;
+    background-size: 64%;
+    background-position: 51% 68%;
+    z-index: 0;
+    position: relative;
+    clip-path: polygon(0 0,100% 42.5%,100% 81%,0% 100%);
+  }
+.code
+{
+    background: url(/img/who/code.svg);
+    height: 46px;
+    width: 95px;
+    transform: translate(57.5rem, -13%);
+    background-size: 93%;
+    background-position: 0% 4%;
+    position: relative;
+    animation-name: codeAnimation;
+    animation-duration: 55.5s;
+    animation-iteration-count: infinite;
+}
+.coder
+{
+    background: url(/img/who/mobster-coding.svg);
+    height: 28%;
+    width: 10%;
+    transform: translate(60.5rem, -30.5%);
+    background-size: 93%;
+    position: relative;
+}
+
+
+
+  
+
+.right-wall
+{
+    height: 95%;
+    background: url(img/who/rightwall.svg) no-repeat;
+    background-position: right;
+    transform: translate3d(80.5%, -85.2%, 31px) scaleX(1) scaleY(1.3);
+    width: 93%;
+    background-color: #005197;
+    clip-path: polygon(0 16%,100% 0,100% 100%,0 76%);
+}
+  .bottom-surface
+  {
+    height: 100%;
+    width: 100%;
+    transform: translate(9%, 26%);
+    transform: scale(1.5) translate(-2%, -77%) skewY(-4deg) skewX(80deg);
+    z-index: -3;
+    position: relative;
+    clip-path: polygon(35% 33%,100% 32%,100% 100%,0 100%);
+    background: #00437E;
+  }
+  .bottom-light
+  {
+    height: 26%;
+    width: 12%;
+    transform: translate(608%, 139%) skew(-80deg, 372deg) scale(2) rotate(-76deg);
+    z-index: 16;
+    background: url(img/who/ground.svg) no-repeat;
+  }
+  .rightWallContent
+  {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    transform: scale(1.1) translate(1%, 4.5%) skewX(1deg) skewY(-0.5deg);
+    transform-origin: right;
+  }
+  .rightWallInnerTxt
+  {
+    height: 34vh;
+    width: 26vw;
+    transform: translate(0vw, 5vh) rotate(3deg) rotateX(36deg) rotateX(-5deg);
+    padding-left: 18vw;
+    padding-bottom: 15vh;
+    z-index: 16;
+    display: inline-block;
+  }
+  .rightWallInnerTxt h1
+  {
+    margin-bottom: 0%;
+    font-size: 52px;
+  }
+  .rightWallInnerTxt p
+  {
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.4;
+    margin-top: 0%;
+    letter-spacing: .8px;
+    width: 71%;
+  }
+  .trash
+  {
+    background: url(img/who/trashcan.svg) no-repeat;
+    height: 19vh;
+    width: 7.5vw;
+    transform: scale(1.75) translate3d(10vw, -90.9vh,25px) rotateY(1deg) scaleX(1.3);
+    background-size: 74% 143%;
+    position: absolute;
+    background-position: 2px -13px;
+  }
+.lamp-shadow
+{
+    background: url(img/who/lamppost-shadow.svg);
+    height: 90%;
+    width: 6%;
+    transform: scale(0.8) translate3d(81.2vw, -183vh,25px) scale(1.3);
+    z-index: 8;
+    background-size: 99% 153%;
+    position: relative;
+    display: inline-block;
+}
+.lamp
+{
+    background: url(img/who/lamppost.svg) no-repeat;
+    /* height: 93%; */
+    height: 67vh;
+    width: 8vw;
+    transform: scale(.82) translate3d(-73rem, -10%,25px) rotateY(-39deg) scaleX(1.3);
+    z-index: 8;
+    background-size: 6vw 95vh;
+    position: relative;
+    background-position: 0.2vw -0.43vh;
+}
+
+/* Meet the mob section taag styles */
+.Mob
+{
+    height: 88vh;
+    width: 101vw;
+    background: linear-gradient( #00437e, #00aaeb);
+    transform: translate(-1vw ,-129vh);
+}
+.bricks
+{
+    background: url(img/meet/bricks.svg) no-repeat center bottom;
+    height: 48%;
+    transform: translateY(-19vh) scale(.8) scaleX(1.21) scaleY(1.23);
+    background-size: 97%;
+    z-index: -2;
+    position: relative;
+}
+
+/* style for mobster */
+.mobster
+{
+    height: 27%;
+    transform: translateY(-48vh);
+}
+.mobster > div
+{
+    display: inline-block;
+}
+.mobster1
+{
+    height: 33vh;
+    width: 13vw;
+    overflow: hidden;
+    transform: translate(17vw, 31.5vh) scale(1.8);
+    position: relative;
+    z-index: 2;
+}
+.mobster2
+{
+    height: 57%;
+    width: 7.5%;
+    overflow: hidden;
+    transform: translate(15.5vw, 15vh);
+    position: relative;
+    z-index: 1;
+}
+.mobster3
+{
+    height: 58%;
+    width: 10%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transform: translate(14vw, 15vh);
+}
+.mobster4
+{
+    height: 74%;
+    width: 11%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transform: translate(11.6vw, 17.5vh) scale(1.22) scaleX(.9) scaleY(.9);
+}
+.mobster5
+{
+    height: 60%;
+    width: 6%;
+    overflow: hidden;
+    transform: translate(9.9vw, 17vh);
+}
+.mobster6
+{
+    height: 108%;
+    width: 13%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transform: translate(8.5vw, 29.5vh) scale(.9) scaleX(1.07);
+}
+.mobster7
+{
+    height: 79%;
+    width: 14%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    transform: translate(0.9vw, 21vh);
+}
+.mobster8
+{
+    height: 76%;
+    width: 10%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transform: translate(-7.2vw, 20vh) scale(1.1) scaleY(1.05);
+}
+.mobster9
+{
+    height: 155%;
+    width: 16%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transform: translate(72vw, -9vh) scale(1.1);
+}
+
+/* set mobster image style */
+
+.mobster1 div
+{
+    transition: all 0.3s;
+    height: 71%;
+    width: 85%;
+    background: url(img/meet/mobster1.svg) no-repeat;
+    background-position-y: 5.45rem;
+}
+.mobster2 div
+{
+    transition: all 0.5s;
+    height: 111%;
+    width: 123%;
+    background: url(img/meet/mobster2.svg) no-repeat;
+}
+.mobster3 div
+{
+    transition: all 0.3s;
+    height: 119%;
+    width: 111%;
+    background: url(img/meet/mobster3.svg) no-repeat;
+}
+.mobster4 div
+{
+    transition: all 0.6s;
+    height: 111%;
+    width: 101%;
+    background: url(img/meet/mobster4.svg) no-repeat;
+}
+.mobster5 div
+{
+    transition: all 0.3s;
+    height: 127%;
+    width: 101%;
+    background: url(img/meet/mobster5.svg) no-repeat;
+}
+.mobster6 div
+{
+    transition: all 0.3s;
+    height: 116%;
+    width: 80%;
+    background: url(img/meet/mobster6.svg) no-repeat;
+    background-size: 7.5vw;
+}
+.mobster7 div
+{
+    transition: all 0.5s;
+    height: 127%;
+    width: 108%;
+    background: url(img/meet/mobster7.svg) no-repeat;
+}
+.mobster8 div
+{
+    transition: all 0.5s;
+    height: 127%;
+    width: 108%;
+    background: url(img/meet/mobster8.svg) no-repeat;
+    background-size: 11vh;
+}
+.mobster9 div
+{
+    transition: all 0.3s;
+    height: 127%;
+    width: 108%;
+    background: url(img/meet/mobster9.svg) no-repeat;
+}
+.moberContents
+{
+    transform: translate(0%, 46%);
+    height: 20%;
+    width: 100%;
+    text-align: center;
+}
+.moberContentsH1
+{
+    font-size: 60px;
+    margin-bottom: 15px;
+    transform: scaleX(1.1) translate(158%, 44%);
+    width: 23%;
+}
+.moberContentsP
+{
+    width: 36%;
+    font-size: 20px;
+    transform: translate(93%, 25%);
+    color: #ffffffb5;
+    letter-spacing: .1px;
+    line-height: 26px;
+}
+.mobContentBtn
+{
+    padding: 8px 29px;
+    font-size: 22px;
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    transform: translateY(89%);
+    z-index: 50;
+    position: relative;    
+    /* transition: all 100s; */
+}
+.mobContentBtn:hover
+{
+    transition: all .5s;
+    background: black;
+    color: white;
+}
+.feedBoxDiv
+{
+    height: 6vh;
+    width: 5vw;
+    background-color: #ffb56a;
+    transform: translate(-10%, 32rem);
+    position: fixed;
+    border-radius: 0px 118px 135px 0px;
+    z-index: 100;
+}
+.feedBoxDiv:hover
+{
+    background: #ff7c00;
+}
+#msgBox:hover
+{
+    transform: translate(10px, 18px) scale(1.41) scaleY(1.08);
+}
+
+.feedInnerDiv
+{
+    height: 80%;
+    width: 57%;
+    background: white;
+    border-radius: 55%;
+    transform: translate(62%, 11%);
+}
+/*  feedBack hover */
+#btn:hover,#callBtn:hover
+{
+    background-color: rgb(8 185 243);
+}
+
+#msgBox
+{
+    height: 2vh;
+    width: 1.58vw;
+    clip-path: polygon(0% 0%,100% 0%,100% 73%,50% 74%,60% 96%,11% 79%,0% 75%);
+    background: black;
+    transform: translate(30%, 66%) scale(1.21) scaleY(1.08);
+    border-radius: 6px 7px 10px 14px;
+    border: 2px solid #d4d4d4;
+}
+#msgBox div
+{
+    height: 23%;
+    width: 16%;
+    background: #008d80;
+    border-radius: 240px;
+    float: left;
+    margin: 1px;
+    transform: translate(5px, 4.5px);
+}
+#Dot1
+{
+    animation: bounce 1s infinite;
+    animation-delay: .1s;
+}
+#Dot2
+{
+    animation: bounce 1.5s infinite;
+    animation-delay: .3s;
+}
+#Dot3
+{
+    animation: bounce 2s infinite;
+    animation-delay: .5s;
+}
+.what_We_DoBlackBg
+{
+    height:60vh;
+    width: 101.55vw;
+    background-color: black;
+    transform: translate(-1vw, -158vh);
+}
+.bags
+{
+    height: 84vh;
+    transform: translate(-2vw,-238vh);
+    position: relative;
+    z-index: 8;
+    position: relative;
+}
+#paperPara
+{
+    color: #6d6d6d;
+    width: 85%;
+    text-align: center;
+    font-size: 21px;
+    height: 155%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+#paperBtn
+{
+    padding: 8px 29px;
+    font-size: 22px;
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    z-index: 50;
+    position: relative;
+}
+#paperBtn:hover
+{
+    color:white;
+    background: black;
+}
+
+/*  fishHook */
+#fishPoleHook
+{
+    width: 10%;
+    border-right: 2px solid black;
+}
+#wormEyeImageDiv
+{
+    height: 100%;
+    width:100%;
+    position: relative;
+    z-index: 3;
+}
+#wormEye
+{
+    width: 0%;
+    transform: scale(1) translate(486%, 30.2px);
+    background-position-x: 1px;
+    z-index: 2;
+    border-radius: 63px;
+    background-position: 15px;
+    animation: worm-eye infinite;
+    animation-duration: 1s;
+    padding: 3px;
+}
+
+ /* Water section */
+#waterFlow
+{
+    height: 50vh;
+    background-image:linear-gradient( #095fac, #001b46);
+    transform: translate(-1vw ,-250vh);
+    width: 101%;
+    position: relative;
+    z-index: 3;
+}
+.dummyOverFlowDiv
+{
+    height: 60.5%;
+    width: 101%;
+    background: #96d5ff87;
+    transform: translate(-1% ,-298%);
+    position: relative;
+}
+#seaDeepScene
+{
+    background-image: linear-gradient( #003266, #001b46);
+    height: 50vh;
+    width: 100.555vw;
+    transform: translate(0vw,-251vh);
+}
+.lastOne
+{
+    height: 39vh;
+    width: 40vw;
+    /* background: darkblue; */
+    transform: translate(29.4vw, -299.4vh);
+    text-align: center;
+    display: inline-block;
+}
+.lastOne ul
+{
+    height: 23%;
+    width: 47%;
+    list-style: none;
+    transform: translate(49%, -18%);
+
+}
+.lastOne ul li
+{
+    height: 67%;
+    width: 19%;
+    /* background: url(/img/connect/icons-connect.svg); */
+    float: left;
+    margin: 13px;
+    border-radius: 52px;
+}
+.faceBook
+{
+    background: url(/img/connect/icons-connect.svg);
+    background-position: -1px -1px;
+    background-size: 408%;
+}
+.twitter
+{
+    background: url(/img/connect/icons-connect.svg);
+    background-position: -70px -1px;
+    background-size: 408%;
+}
+.linkedin
+{
+    background: url(/img/connect/icons-connect.svg);
+    background-position: -140px -3px;
+    background-size: 408%;  
+}
+.faceBook:hover
+{
+    background-position: -1px -71px;
+}
+.twitter:hover
+{
+    background-position: -70px -73px;
+}
+.linkedin:hover
+{
+    background-position: -140px -72px;
+}
+.lastOne img
+{   
+    height: 10%;
+    width: 5%;
+    transform: translate(6%, 154%);
+}
+.lastOne p
+{   
+    height: 15%;
+    width: 33%;
+    transform: translate(102%, 119%);
+    font-size: 19px;
+    font-weight: bolder;
+    line-height: 19px;
+    color: #33bdf1;
+    letter-spacing: .2px;
+}
+.msgBox
+{
+    height: 41vh;
+    width: 101.05vw;
+    background-color: #001b46;
+    transform: translate(-0.45vw ,-294vh);
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+}
+.msgBox h1
+{
+    font-size: 23px;
+    transform: translate(10px, 32px);
+    width: 99%;
+}
+.inputContainer
+{
+    height: 52%;
+    width: 50%;
+    transform: translate(31rem, 10px);
+    /* background-color:#00aaeb1c; */
+}
+.inputContainer input
+{
+    clear: both;
+    float: left;
+    height: 15%;
+    width: 39%;
+    margin: 11px 18px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 6px 4px;
+    border-radius: 4px;
+    color: black;
+    background: #00adee;
+    border: none;
+}
+.inputContainer input::placeholder/* ,textarea::placeholder */
+{
+    color:white;
+    /* opacity: calc(); */
+}
+.inputContainer textarea::placeholder
+{
+    color:rgb(255, 255, 255);
+    /* opacity: calc(); */
+}
+.inputContainer textarea
+{
+    height: 70%;
+    width: 49%;
+    transform: translate(-1%, 10.5%);
+    border-radius: 8px;
+    resize: none;
+    padding: 8px 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    background: #00adee;
+    border: none;
+}
+.msgBox button
+{
+    height: 12.5%;
+    width: 12.5%;
+    font-size: 22px;
+    font-weight: bolder;
+    background: #F9B844;
+    border-radius: 5px;
+    color: #030343;
+    border: none;
+    transform:translate(89px, -9px);
+}
+.msgBox  p
+{
+    transform: translate(-4px, 6px);
+    background: #000e39;
+    padding: 16px 0px;
+    font-size: 14px;
+    color: #00adee;
+    width: 100.2%;
+}
+#viewMoreBtn:hover
+{
+    background: transparent;
+    color:black;
+}
+/* .inputContainer input::placeholder
+{
+    color:white;
+} */
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  /* menu animation */
+  @keyframes menu 
+  {
+    0%{
+        transform:scaleY(.0001)
+    }  
+    20%{
+
+    }
+    40%{
+
+    }
+    60%{
+
+    }
+    80%{
+
+    }
+    100%
+    {
+
+    }
+  }
+  
+  /* key frames */
+  /* lightning animation */
+    
+  @keyframes lightsAnimation
+  {
+    0%
+    {
+      opacity: 0.4;
+    }
+    100%
+    {
+      opacity: 1.0;
+    }
+  }
+  @keyframes codeAnimation
+  {
+    0% 
+    {
+        background-position: 0% 4%;
+    }
+    20% 
+    {
+        background-position: 0% 300%;
+    }
+    30% 
+    {
+        background-position: 0% 400%;
+    }
+    40% 
+    {
+        background-position: 0% 600%;
+    }
+    50% 
+    {
+        background-position: 0% 650%;
+    }
+    60% 
+    {
+        background-position: 0% 1000%;
+    }
+    70% 
+    {
+        background-position: 0% 1200%;
+    }
+    80% 
+    {
+        background-position: 0% 1300%;
+    }
+    90% 
+    {
+        background-position: 0% 1400%;
+    }
+    100% 
+    {
+        background-position: 0% 1500%;
+    }
+  }
+
+/* Room rotation animation keyFrame */
+
+@keyframes rotateRoom
+{
+  0% 
+  {
+      transform: rotateY(97deg);
+  }
+  20% 
+  {
+      transform: rotateY(97.5deg);
+  }
+  30% 
+  {
+      transform: rotateY(98deg);
+  }
+  40% 
+  {
+      transform: rotateY(98.5deg);
+  }
+  50% 
+  {
+      transform: rotateY(99deg);
+  }
+  60% 
+  {
+      transform: rotateY(99.5deg);
+  }
+  70% 
+  {
+      transform: rotateY(100deg);
+  }
+  80% 
+  {
+      transform: rotateY(100.5deg);
+  }
+  90% 
+  {
+      transform: rotateY(101deg);
+  }
+  100% 
+  {
+      transform: rotateY(101.5deg);
+  }
+}
+
+/* feedBack msgBox animation */
+@keyframes bounce
+{
+    0% ,100%
+    {
+        opacity:1;
+    }
+    60%
+    {
+        opacity: .5;
+    }
+}
+
+/* fish pole hook */
+@keyframes fishHook 
+{
+    0%,100% 
+    {
+        transform: translate(62.1vw, -208.1vh) rotate(0deg);
+    }
+    50% 
+    {
+        transform: translate(62.1vw, -208.1vh) rotate(5deg);
+    }
+}
+
+/* Sea wave */
+@keyframes wave {
+    0%, 100% 
+    {
+        background-position: 0px;
+    }
+    50% 
+    {
+        background-position: 111px;
+    }
+    
+}
+
+@keyframes fishWiggleMovement
+{
+    0%, 100% {
+        transform: rotateY(4deg);
+    }
+    50% {
+        transform: rotateY(23deg);
+    }
+}
+
+@keyframes fishWiggle 
+{
+    0%
+    {
+        transform: translate(65rem,-19rem) rotate(2deg);
+    }
+    50%
+    {
+        transform: translate(96rem,-19rem) rotateY(2deg);
+    }
+    70%
+    {
+        transform: translate(99rem,-19rem) rotateY(214deg);
+    }
+    100%
+    {
+        transform: translate(65rem,-19rem) rotateY(214deg);
+    }
+}
+
+@keyframes fish2Wiggle 
+{
+    0% {
+        transform: translate(5rem,-19rem) rotate(0deg);
+    }
+    50% {
+        transform: translate(60rem,-19rem) rotateY(0deg);
+    }
+    70% {
+        transform: translate(60rem,-19rem) rotateY(180deg);
+    }
+    95% {
+        transform: translate(35rem,-19rem) rotateY(180deg);
+    }
+    100% {
+        transform: translate(5rem,-19rem) rotateY(0deg);
+    }
+}
+
+@keyframes fish3Wiggle
+{
+    0% {
+        transform: translate(4rem, -20rem) rotateY(0deg);
+    }
+    
+    48% {
+        transform: translate(112rem, -20rem) rotateY(0deg);
+    }
+    50% {
+        transform: translate(112rem, -20rem) rotateY(180deg);
+    }
+    98% {
+        transform: translate(4rem, -20rem) rotateY(180deg);
+    }
+    100% {
+        transform: translate(4rem, -20rem) rotateY(0deg);
+    }
+}
+
+@keyframes fish4Wiggle 
+{
+    0% {
+        transform: translate(90rem, -29.5rem) rotateY(0deg);
+    }
+    20% {
+        transform: translate(113rem, -29.5rem) rotateY(0deg);
+    }
+    60% {
+        transform: translate(113rem, -29.5rem) rotateY(180deg);
+    }
+    80% {
+        transform: translate(90rem, -29.5rem) rotateY(180deg);
+    }
+    98% {
+        transform: translate(90rem, -29.5rem) rotateY(180deg);
+    }
+    100% {
+        transform: translate(90rem, -29.5rem) rotateY(0deg);
+    }
+}
+
+
+
+@keyframes fish5Wiggle 
+{
+    0% {
+        transform: translate(20rem, -29.5rem) rotateY(0deg);
+    }
+    
+    48% {
+        transform: translate(35rem, -29.5rem) rotateY(0deg);
+    }
+    50% {
+        transform: translate(40rem, -29.5rem) rotateY(180deg);
+    }
+    98% {
+        transform: translate(35rem, -29.5rem) rotateY(180deg);
+    }
+    100% {
+        transform: translate(20rem, -29.5rem) rotateY(0deg);
+    }
+}
+
+@keyframes fish6Wiggle 
+{
+    0% {
+        transform: translate(103rem, -32rem) rotateY(180deg);
+    }
+    10% {
+        transform: translate(83rem, -32rem) rotateY(180deg);
+    }
+    20% {
+        transform: translate(74rem, -32rem) rotateY(180deg);
+    }
+    30% {
+        transform: translate(60rem, -32rem) rotateY(115deg);
+    }
+    
+    50% {
+        transform: translate(73rem, -32rem) rotateY(0deg);
+    }
+    70% {
+        transform: translate(83rem, -32rem) rotateY(0deg);
+    }
+    80% {
+        transform: translate(93rem, -32rem) rotateY(0deg);
+    }
+    100% {
+        transform: translate(103rem, -32rem) rotateY(0deg);
+    }
+}
+@keyframes fish7Wiggle 
+{
+    0% {
+        transform: translate(4px, 5rem) rotateY(0deg);
+    }
+    48% {
+        transform: translate(115px, 5rem) rotateY(0deg);
+    }
+    50% {
+        transform: translate(115px, 5rem) rotateY(180deg);
+    }
+    98% {
+        transform: translate(4px, 5rem) rotateY(180deg);
+    }
+    100% {
+        transform: translate(4px, 5rem) rotateY(0deg);
+    }
+}
+
+@keyframes fish8Wiggle 
+{
+    0% {
+        transform: translate(110rem, -6.5rem) rotateY(180deg);
+    }
+    20% {
+        transform: translate(110rem, -6.5rem) rotateY(180deg);
+    }
+    60% {
+        transform: translate(80rem, -6.5rem) rotateY(180deg);
+    }
+    80% {
+        transform: translate(80rem, -6.5rem) rotateY(0deg);
+    }
+    100% {
+        transform: translate(110rem, -6.5rem) rotateY(0deg);
+    }
+}
+
+@keyframes fish9Wiggle 
+{
+    0% {
+        transform: translate(85rem, -3rem) rotateY(0deg);
+    }
+    48% {
+        transform: translate(109rem, -3rem) rotateY(0deg);
+    }
+    50% {
+        transform: translate(109rem, -3rem) rotateY(170deg);
+    }
+    98% {
+        transform: translate(95rem, -3rem) rotateY(180deg);
+    }
+    100% {
+        transform: translate(85rem, -3rem) rotateY(0deg);
+    }
+}
+
+
+
+
+@keyframes fish10Wiggle 
+{
+0% {
+    transform: translate(282%, -130%) rotateY(0deg);
+}
+50% {
+    transform: translate(73rem, -130%) rotateY(0deg);
+}
+70% {
+    transform: translate(77rem, -130%) rotateY(0deg);
+}
+80% {
+    transform: translate(77rem, -130%) rotateY(180deg);
+}
+90% {
+    transform: translate(282%, -130%) rotateY(180deg);
+}
+100% {
+    transform: translate(282%, -130%) rotateY(0deg);
+}
+} 

@@ -1,0 +1,332 @@
+#menu
+{
+    margin-left: 0%;
+}
+
+/* feedback  */
+#pCreation
+{
+    margin-bottom: 6%;
+}
+.showRoomwholeContainer
+{
+    height: 277%;
+    width: 100%;
+}
+#startCreating
+{
+    margin-top: 24px;
+}
+#callBtn
+{
+    margin:8% 2% 12% 0%;
+}
+.showRoomSection1
+{
+    height: 12%;
+    width: 100.4%;
+    text-align: center;
+    color: white;
+    background: radial-gradient(  at 60% 50%, #0089cd, #185799);
+}
+.showRoomSection1 h1
+{
+    font-size: 93px;
+    transform: translateY(122%);
+}
+.showRoomSection1 p
+{
+    font-size: 24px;
+    transform: translateY(10.5rem);
+    font-family: system-ui;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: white;
+    -webkit-text-stroke-width: thin;
+}
+.showRoomSection
+{
+    height: 30%;
+    width: 100.4%;
+}
+.showRoomSection2Div1
+{
+    width: 50%;
+    height: 100%;
+    background-color: aliceblue;
+    float: left;
+}
+.showRoomSection2Div2
+{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.showRoomSection2Div2 box1
+{
+    width: 55%;
+    height: 100%;
+}
+.showRoomSection2Div2 .box1
+{
+    width: 100%;
+    height: 50%;
+}
+.boxdiv1
+{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.boxdiv2
+{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.showRoomSection2Div2 .box2
+{
+    width: 100%;
+    height: 50%;
+}
+.boxdiv3
+{
+    width: 50%;
+    height: 100%;
+    clear: both;
+    float: left;
+    text-align: center;
+}
+.boxdiv4
+{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.exStyle1
+{
+    border-bottom: 1px solid black;
+}
+.exStyle2
+{
+    border-bottom: 1px solid black;
+}
+
+/* showRoom section 2 */
+.sec2Div1
+{
+    background: url(/img/showRoom/prn.jpg) no-repeat #D7D7D7;
+    background-size: cover;
+}
+
+
+/* virtual */
+.virtualDriveImg
+{
+    background: url(/img/showRoom/vdrive.jpg) no-repeat white;
+    background-size: 102%;
+    clip-path: polygon(100% 48%,96% 52%,100% 56%,100% 100%,0 100%,0 0,100% 0);
+}
+.virtualDrive img
+{   
+    transform: translate(-2%,94%);
+}
+.viewProjBtn
+{   
+    transform: translate(10%,339%);
+    padding: 2.5% 3%;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0096d7;
+    border: 2px solid #0096d7;
+    border-radius: 30px;
+    background:transparent;
+}
+#viewProjBtn1
+{
+    transform: translate(19rem,51rem);
+    color: rgb(0, 150, 215);
+    background: transparent;
+    padding: 1.8% 3%;
+    font-size: 14px;
+}
+/* certona */
+.certona img
+{
+    transform: translateY(87%);
+}
+.certona button
+{
+    transform: translate(10%,250%);
+}
+.certonaImg
+{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 58%, 5% 53%, 0 49%);
+    background: url(/img/showRoom/certona.jpg);
+    background-size: cover;
+    background-position-y: -22px;
+}
+
+/* showRoom section 3 */
+.sec3Div2
+{
+    background: url(/img/showRoom/thescoutr.jpg);
+    background-size: cover;
+    background-position-y: -42px;
+}
+.sec3Div2 img
+{
+    height: 14.5%;
+    transform: translate(19rem, 21rem);
+}
+.mountain img
+{
+    transform: translateY(144px);
+    width: 52%;
+}
+.mountain button
+{
+    transform: translate(0%,360%);
+}
+.mountainImg
+{
+    background: url(/img/showRoom/blue-mountain-education.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 58%, 5% 53%, 0 49%);
+}
+.welltok img
+{
+    transform: translateY(138%);
+    width: 50%;
+}
+.welltokImg
+{    
+    background: url(/img/showRoom/welltok.jpg);
+    background-size: cover;
+    clip-path: polygon(100% 48%,96% 52%,100% 56%,100% 100%,0 100%,0 0,100% 0);
+}
+
+
+
+
+/* showRoom section 3 */
+.sec4Div1
+{
+    background: url(/img/showRoom/national-safety-comission.jpg);
+    background-size: cover;
+    background-position-y: -42px;
+}
+.sec4Div1 h1
+{
+    color: white;
+    transform: translate(9.3rem, 21.5rem);
+    font-size: 41px;
+    font-family: system-ui;
+    font-weight: 200;
+}
+.dynamic img
+{
+    transform: translateY(138%);
+    width: 50%;
+}
+.dynamicImg
+{
+    background: url(/img/showRoom/dynamic-repair-solutions.jpg);
+    background-size: cover;
+    clip-path: polygon(100% 48%,96% 52%,100% 56%,100% 100%,0 100%,0 0,100% 0);
+}
+
+.proven img
+{
+    transform: translateY(138%);
+    width: 50%;
+}
+.provenImg
+{    
+    background: url(/img/showRoom/proven.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 58%, 5% 53%, 0 49%);
+}
+
+
+/* section 6 extra styles */
+#showRoomSec6 h1
+{
+    transform: translate(53rem, 9rem);
+    color: black;
+    font-size: 43px;
+}
+.showRoomSec1 {
+    background: url(/img/icons-perdy.svg);
+    background-size: 407%;
+    background-position: 132.5% 0.1%;
+}
+.showRoomSec2 {
+    background: url(/img/icons-perdy.svg);
+    background-size: 407%;
+    background-position: 33.5% 0.1%;
+}
+.showRoomSec3
+{
+    background: url(/img/icons-perdy.svg);
+    background-size: 407%;
+    background-position: 66.5% 0.1%;
+}
+.showRoomSec4
+{
+    background: url(/img/icons-perdy.svg);
+    background-size: 407%;
+    background-position: 99.5% 0.1%;
+}
+#showRoomBtn1
+{
+    transform: translate(2.5rem, 1.7rem);
+    color: #f14852;
+    border: 3px solid#f14852;
+}
+#showRoomBtn2
+{
+    transform: translate(7.7rem, 1.7rem);
+    border: 3px solid #77b950;
+    color: #77b950;
+}
+#showRoomBtn3 
+{
+    transform: translate(13.1rem, 1.7rem);
+    color: #ffb56a;
+    border: 3px solid #ffb56a;
+}
+#showRoomBtn4
+{
+    transform: translate(18.2rem, 1.7rem);
+    color: #78c6e1;
+    border: 3px solid#78c6e1;
+}
+#showRoomBtn2:hover
+{
+    background:  #77b950;
+    color: white;
+}
+#showRoomBtn3:hover
+{
+    background: #ffb56a;
+    color: white;
+}
+#showRoomBtn4:hover
+{
+    background: #78c6e1;
+    color: white;
+}
+#showRoomBtn1:hover
+{
+    background: #f14852;
+    color: white;
+}
+.showRoomProf
+{
+    margin-top: -9%;
+}

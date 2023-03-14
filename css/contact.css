@@ -1,0 +1,528 @@
+html, body {
+    height: 100%;
+    width: 99.8%;
+    /* background-color: #009CD7; */
+    color:#00acdc;
+    font-family: sans-serif;
+  }
+  *
+  {
+    margin: 0px;
+  }
+
+  .example::-webkit-scrollbar
+  {
+    display: none;
+  }  
+.lastOneDiv::-webkit-scrollbar 
+  {
+    display: none;
+  }
+
+    /* feedback container */
+    #feedBackContainer
+    {
+      display: none;
+      padding-right: 14px;
+      padding-bottom: 12px;
+    }
+
+/* feedback  */
+#pCreation
+{
+    margin-bottom: 6%;
+}
+.showRoomwholeContainer
+{
+    height: 277%;
+    width: 100%;
+}
+#startCreating
+{
+    margin-top: 24px;
+}
+#callBtn
+{
+    margin:8% 2% 12% 0%;
+}
+    /* Menu */
+    .menu
+    {
+      /* display: block; */
+      display: block;
+      transition-property:transform;
+      height: 9%;
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+      transform:translateX(34.5%);
+      transition: all 0.5s;
+      margin-top: 2%;
+    }
+    .menu-list
+    {
+      width: 538px;
+      background-color: black;
+      cursor: pointer;
+      list-style: none;
+      text-transform: uppercase;
+      transition: all 3s;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .menu-list li
+    {    
+        padding: 2% 3%;
+        font-size: 20px;
+    }
+    .menu .left
+    {
+      transition-delay: 12s;
+      width: 5%;
+      height: 26%;
+      background-color: black;
+      transform: rotate(11deg) translate(1%,-67%);
+      position: absolute;
+      z-index: -1;
+    }
+    .right
+    {
+      transition-delay: 12s;
+      width: 5%;
+      height: 26%;
+      background-color: black;
+      transform: rotate(348deg) translate(473px, 86px);
+      position: absolute;
+      z-index: -1;
+    } 
+    #menuIcon
+    {
+      background: url(/img/logo-cm@2x.png) no-repeat black;
+      position: fixed;
+      transform: translate(57rem, 0rem) scale(0.65);
+      z-index: 101;
+      display: none;
+      height: 10%;
+      width: 6%;
+      border-radius: 67px;
+      background-size: 67px;
+      background-position: 23px 13px;
+    }
+    #menuIcon:hover
+    {
+      background-color: #333;
+    }
+    a{
+          text-decoration: none;
+        color: white;
+    }
+    .menu-list li a:hover{
+          color: #61f0ff;
+    }
+    
+/* msg box */
+  /* feedback container */
+  #feedBackContainer
+  {
+    display: none;
+  }
+.feedBoxDiv
+{
+    height: 6%;
+    width: 5%;
+    background-color: #ffb56a;
+    transform: translate(-10%, 32rem);
+    position: fixed;
+    border-radius: 0px 118px 135px 0px;
+    z-index: 100;
+}
+.feedBoxDiv:hover
+{
+    background: #ff7c00;
+}
+#msgBox:hover
+{
+    transform: translate(10px, 18px) scale(1.41) scaleY(1.08);
+}
+
+.feedInnerDiv
+{
+    height: 80%;
+    width: 57%;
+    background: white;
+    border-radius: 26px;
+    transform: translate(62%, 11%);
+}
+/*  feedBack hover */
+#btn:hover,#callBtn:hover
+{
+    background-color: rgb(8 185 243);
+}
+
+#msgBox
+{
+    height: 42%;
+    width: 53%;
+    clip-path: polygon(0% 0%,100% 0%,100% 73%,50% 74%,60% 96%,11% 79%,0% 75%);
+    background: black;
+    transform: translate(10px, 18px) scale(1.21) scaleY(1.08);
+    border-radius: 6px 7px 13px 14px;
+    border: 2px solid #d4d4d4;
+}
+#msgBox div
+{
+    height: 23%;
+    width: 16%;
+    background: #008d80;
+    border-radius: 240px;
+    float: left;
+    margin: 1px;
+    transform: translate(5px, 4.5px);
+}
+#Dot1
+{
+    animation: bounce 1s infinite;
+    animation-delay: .1s;
+}
+#Dot2
+{
+    animation: bounce 1.5s infinite;
+    animation-delay: .3s;
+}
+#Dot3
+{
+    animation: bounce 2s infinite;
+    animation-delay: .5s;
+}
+
+/* wholeContainer */
+.contactlpWholeContainer
+{
+    height: 100%;
+    width: 100%;
+}
+.container1
+{
+    height: 100%;
+    width: 49%;
+    text-align: center;
+    float: left;
+}
+.container2
+{
+    height: 100%;
+    width: 49%;
+    float: left;
+}
+/* content container */
+.contentContainer
+{
+    height: 50%;
+    width:56%;
+    transform: translateY(38%);
+}
+/* message box */
+.msgBox
+{
+    height: 90%;
+    width: 75%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backFace
+{
+    background: url(/img/envelope-back.svg);
+    height: 35%;
+    width: 77%;
+    transform: translateY(20.1rem);
+}
+/* letter */
+.letter
+{
+    height: 56%;
+    background: url(/img/letter.svg);
+    width: 25.3%;
+    position: absolute;
+    background-size: 100%;
+    transform: translateY(41px);
+}
+.letter input
+{
+    background: #DDDDDD;
+    font-size: 20px;
+    margin: 14px 0px;
+}
+.sec1
+{
+    transform: translate(17%, 5rem);
+    font-size: 21px;
+    color:#0000008c;
+    width: 15%;
+}
+.nameTxt
+{
+    height: 25%;
+    width: 89%;
+    transform: translate(0px, 66px);
+    padding: 8px;
+    border: none;
+}
+.sec2
+{
+    width: 15%;
+    font-size: 21px;
+    color:#0000008c;
+    transform: translate(12%, 4.5rem);
+}
+.mailTxt
+{
+    height: 25%;
+    width: 89%;
+    transform: translate(0px, 57px);
+    padding: 8px;
+    border: none;
+}
+.sec3
+{
+    width: 15%;
+    font-size: 21px;
+    color:#0000008c;
+    transform: translate(23%, 4rem);
+}
+.teleTxt
+{
+    height: 25%;
+    width: 89%;
+    transform: translate(-1px, 51px);
+    padding: 8px;
+    border: none;
+}
+.txtArea
+{
+    height: 0%;
+    width: 88%;
+    transform: translate(-2px, 64px);
+    padding: 8px;
+    border: none;
+    background: #DDDDDD;
+}
+.sendBtn
+{
+    position: absolute;
+    padding: 11px 54px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0e254b;
+    background: #f9b844;
+    border: 0px solid #f9b844;
+    border-radius: 6px;
+    transform: translate(-1.5%,27.6rem);
+}
+
+
+
+.frontFace
+{
+    background: url(/img/envelope-front.svg);
+    height: 30%;
+    width: 28.15%;
+    transform: translate(0.2%,20rem) scaleY(1.05);
+    background-size: 102%;
+    position: absolute;
+    background-position-x: -10px;
+}
+
+/* contents */
+.content1
+{
+    font-size: 80px;
+    margin:19px 0px 27px;
+}
+.content2
+{
+    font-size: 36px;
+    color: black;
+    margin: 0px;
+}
+.content3
+{
+    font-size: 24px;
+    font-weight: lighter;
+    color: #00acdcb5;
+    letter-spacing: 0.5px;
+    margin-top: 14px;
+}
+.content4
+{
+    font-size: 32px;
+    letter-spacing: 1px;
+    -webkit-text-stroke-width: 1.6px;
+    padding-top: 6%;
+}
+.content4::after
+{
+    content: "619.734.9265";
+    color: black;
+    -webkit-text-stroke-width: 1.5px;
+}
+
+/* last one */
+
+.lastOneDiv
+{
+  height: 76%;
+  width: 100%;
+  background-color: #0097D6;
+  transform: translateY(-33%) scaleX(1.0085);
+  clip-path: polygon(50% 27%,100% 38%,100% 100%,0 100%,0% 38%);
+
+}
+.buildings
+{
+  transform:translate(20.4rem, 21rem) scale(0.65);
+}
+.light
+{
+  transform: translate(17%, -30%) scale(.6);
+  position: relative;
+  z-index: -1;
+  animation: lightsAnimation 1.8s infinite ease-in-out;
+}
+.light+div
+{
+  height: 27.5%;
+  background-color: black;
+  width: 100%;
+  transform: translate(0rem, -17rem);
+}
+.ship
+{
+  width: 16%;
+  transform: translate(23rem, -7.7rem);
+  animation-name: shipMoving;
+  animation-delay: 3s;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+}
+.compName
+{
+  height: 27%;
+  transform: translate(24rem, -4rem);
+  width: 14%;
+}
+.compName img{
+  height: 94%;
+  width: 19%;
+}
+.compName::after
+{
+  content: 'CreativeMob, Inc.';
+  float: right;
+  color: white;
+  clear: both;
+  transform: translate(-37px, 12px);
+  font-size: 21px;
+  font-family: system-ui;
+}
+.AboutMedia
+{
+  float: left;
+  height: 32%;
+  width: 3.9%;
+  background-color: white;
+  transform: translate(59rem, -8rem);
+  background: url(/img/connect/icons-connect.svg);
+  background-size: 315px;
+  background-position: -160px -2px;
+  border-radius: 36px;
+}
+.AboutMedia2
+{
+  float: left;
+  height: 32%;
+  width: 3.9%;
+  background-color: white;
+  transform: translate(61rem, -8rem);
+  border-radius: 36px;
+  background: url(/img/connect/icons-connect.svg);
+  background-size: 315px;
+  background-position: -238px -2px;
+}
+.AboutMedia:hover
+{
+  background-position: -160px -83px;
+}
+.AboutMedia2:hover
+{
+  background-position: -238px -83px;
+}
+.address
+{
+  height: 23%;
+  width: 11%;
+  float: left;
+  transform: translate(77rem, -7rem);
+  color: #b3b3b3;
+}
+.address img
+{
+  height: 80%;
+  width: 19%;
+}
+.address::after
+{
+  content: "4655 Ruffner St. Suite 220 San Diego, CA 92111";
+  float: left;
+  transform: translate(48px, -42px);
+}
+.address+p
+{
+  transform: translate(53%, 51px);
+  color: #e7e7e7;
+  width: 51%;
+}
+
+/* key frames */
+/* lightning animation */
+@keyframes lightsAnimation
+{
+  0%
+  {
+    opacity: 0.4;
+  }
+  100%
+  {
+    opacity: 1.0;
+  }
+}
+
+/* feedBack msgBox animation */
+@keyframes bounce
+{
+    0% ,100%
+    {
+        opacity:1;
+    }
+    60%
+    {
+        opacity: .5;
+    }
+}
+
+/* ship moving animation */
+@keyframes shipMoving 
+{
+  0% {
+    transform: translate(23rem, -7.7rem);
+}
+
+50% {
+    transform: translate(-20rem, -7.7rem);
+}
+100% {
+    transform: translate(23rem, -7.7rem);
+}
+
+}

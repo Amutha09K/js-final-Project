@@ -1,0 +1,952 @@
+html, body {
+    height: 100%;
+    width: 99.8%;
+    /* background-color: #009CD7; */
+    /* color:#00acdc; */
+    font-family: sans-serif;
+  }
+  *
+  {
+    margin: 0px;
+  }
+
+  .example::-webkit-scrollbar
+  {
+    display: none;
+  }  
+.lastOneDiv::-webkit-scrollbar 
+  {
+    display: none;
+  }
+
+    /* feedback container */
+    #feedBackContainer
+    {
+      display: none;
+      padding-right: 14px;
+      padding-bottom: 12px;
+    }
+    /* Menu */
+    .menu
+    {
+        display: block;
+        transition-property:transform;
+        height: 9%;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        transform:translateX(34.5%);
+        /* transition: all 0.5s; */
+        margin-top: 1.5%;
+        margin-left: 4%;
+    }
+    .menu-list
+    {
+      width: 538px;
+      background-color: black;
+      cursor: pointer;
+      list-style: none;
+      text-transform: uppercase;
+      transition: all 3s;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .menu-list li
+    {    
+        padding: 2% 3%;
+        font-size: 20px;
+    }
+    .menu .left
+    {
+      transition-delay: 12s;
+      width: 5%;
+      height: 26%;
+      background-color: black;
+      transform: rotate(11deg) translate(1%,-67%);
+      position: absolute;
+      z-index: -1;
+    }
+    .right
+    {
+      transition-delay: 12s;
+      width: 5%;
+      height: 26%;
+      background-color: black;
+      transform: rotate(348deg) translate(473px, 86px);
+      position: absolute;
+      z-index: -1;
+    }
+    #menuIcon
+    {
+      background: url(/img/logo-cm@2x.png) no-repeat black;
+      position: fixed;
+      transform: translate(57rem, 0rem) scale(0.65);
+      z-index: 101;
+      display: none;
+      height: 10%;
+      width: 6%;
+      border-radius: 67px;
+      background-size: 67px;
+      background-position: 23px 13px;
+    }
+    #menuIcon:hover
+    {
+      background-color: #333;
+    }
+    a{
+          text-decoration: none;
+        color: white;
+    }
+    .menu-list li a:hover{
+          color: #61f0ff;
+    }
+    
+/* msg box */
+  /* feedback container */
+  #feedBackContainer
+  {
+    display: none;
+  }
+.feedBoxDiv
+{
+    height: 6%;
+    width: 5%;
+    background-color: #ffb56a;
+    transform: translate(-10%, 32rem);
+    position: fixed;
+    border-radius: 0px 118px 135px 0px;
+    z-index: 100;
+}
+.feedBoxDiv:hover
+{
+    background: #ff7c00;
+}
+#msgBox:hover
+{
+    transform: translate(10px, 18px) scale(1.41) scaleY(1.08);
+}
+
+.feedInnerDiv
+{
+    height: 80%;
+    width: 57%;
+    background: white;
+    border-radius: 26px;
+    transform: translate(62%, 11%);
+}
+/* feedback  */
+#pCreation
+{
+    margin-bottom: 6%;
+}
+.showRoomwholeContainer
+{
+    height: 277%;
+    width: 100%;
+}
+#startCreating
+{
+    margin-top: 24px;
+}
+#callBtn
+{
+    margin:8% 2% 12% 0%;
+}
+/*  feedBack hover */
+#btn:hover,#callBtn:hover
+{
+    background-color: rgb(8 185 243);
+}
+
+#msgBox
+{
+    height: 42%;
+    width: 53%;
+    clip-path: polygon(0% 0%,100% 0%,100% 73%,50% 74%,60% 96%,11% 79%,0% 75%);
+    background: black;
+    transform: translate(10px, 18px) scale(1.21) scaleY(1.08);
+    border-radius: 6px 7px 13px 14px;
+    border: 2px solid #d4d4d4;
+}
+#msgBox div
+{
+    height: 23%;
+    width: 16%;
+    background: #008d80;
+    border-radius: 240px;
+    float: left;
+    margin: 1px;
+    transform: translate(5px, 4.5px);
+}
+#Dot1
+{
+    animation: bounce 1s infinite;
+    animation-delay: .1s;
+}
+#Dot2
+{
+    animation: bounce 1.5s infinite;
+    animation-delay: .3s;
+}
+#Dot3
+{
+    animation: bounce 2s infinite;
+    animation-delay: .5s;
+}
+
+
+/* section1 */
+.section1
+{
+    height: 80%;
+    width: 100.4%;
+}
+.section1 img
+{
+    height: 81%;
+    transform: translate(64%, 16%);
+}
+.section1 .section1Container
+{
+    height: 55%;
+    width: 46%;
+    float: right;
+    transform: translateY(29%);
+}
+.section1 div h1
+{
+    font-size: 82px;
+    color: #0097D6;
+}
+.section1 div p
+{
+    font-family: ui,'gotham-light', ui-sans-serif;
+    width: 61%;
+    font-size: 41px;
+    color: #505050e8;
+    font-weight: 200;
+    margin-top: 18px;
+}
+.section1 div p+div
+{
+    transform: translate(0px, 1rem);
+    width: 61%;
+    height: 34%;
+}
+.section1Container div div
+{
+    width: 19%;
+    height: 62%;
+    float: left;
+    background-color: #b3b3b3;
+    margin: 0% 3%;
+    border-radius: 60px;
+}
+.sec1
+{
+    background: url(/img/icons-perdy.svg);
+   background-size: 407%;
+    background-position: 33.5% 0.1%;    
+}
+.sec2
+{
+    background: url(/img/icons-perdy.svg);
+   background-size: 407%;
+    background-position: 66.5% 0.1%;
+}
+.sec3
+{
+    background: url(/img/icons-perdy.svg);
+   background-size: 407%;
+    background-position: 99.5% 0.1%;
+}
+.sec4
+{
+    background: url(/img/icons-perdy.svg);
+   background-size: 407%;
+    background-position: 132.5% 0.1%;
+}
+#servicesProfiles p
+{
+    font-size: 14.5px;
+    width: 24%;
+    height: 17%;
+    font-weight: bold;
+    text-align: center;
+    -webkit-text-stroke: thin;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+#servicesProfiles a p
+{
+    font-size: 14.5px;
+    width: 24%;
+    height: 17%;
+    font-weight: bold;
+    text-align: center;
+    -webkit-text-stroke: thin;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+#p1
+{
+    transform: translate(0.3rem, .7rem);
+}
+#p2
+{
+    transform: translate(8.5rem, 0.7rem);
+}
+#p3
+{
+    transform: translate(17.2rem, 0.7rem);
+}
+#p4
+{
+    transform: translate(25.5rem, -1.6rem);
+}
+
+
+/* section2 */
+.section2
+{
+    height: 76%;
+    width: 100.4%;
+    background: radial-gradient( at 40% 50%, #373739, black);
+}
+.section2 img
+{
+    width: 29%;
+    transform: translate(73%, 15%);
+}
+.section2Div
+{
+    height: 95%;
+    width: 33%;
+    transform: translate(166%, -55.5%);
+}
+.section2Div h1
+{
+    font-size: 89px;
+    width: 100%;
+    /* text-align: center; */
+    -webkit-text-stroke: thin;
+    padding-top: 58px;
+    color: white;
+}
+.section2Div p
+{
+    color: white;
+    font-size: 23px;
+    padding-top: 24px;
+    width: 75%;
+    font-weight: lighter;
+    font-family: system-ui;
+    line-height: 32px;
+}
+.section2ProfileContainer
+{
+    transform: translate(12%, 1rem);
+    width: 77%;
+    height: 18%;
+}
+
+.section2ProfileContainer div
+{
+    width: 19%;
+    height: 62%;
+    float: left;
+    background-color: #b3b3b3;
+    margin: 0% 3%;
+    border-radius: 60px;
+}
+.sec2Profile1
+{
+    background: url(/img/icons-perdy.svg);
+   background-size: 407%;
+    background-position: -132.5% 60.1%;    
+}
+.sec2Profile2
+{
+    background: url(/img/icons-perdy.svg);
+   background-size: 407%;
+    background-position: 33.5% -59.5%;
+}
+.sec2Profile3
+{
+    background: url(/img/icons-perdy.svg);
+   background-size: 407%;
+    background-position: 66.5% -58.9%;
+}
+.sec2Profile4
+{
+    background: url(/img/icons-perdy.svg);
+   background-size: 407%;
+    background-position: 99.5% 60.1%;
+}
+.section2ProfileContainer p
+{
+    font-size: 17.5px;
+    width: 22%;
+    height: 17%;
+    font-weight: bold;
+    text-align: center;
+    -webkit-text-stroke: thin;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+#sec2p1
+{
+    transform: translate(0.5rem, 0.7rem);
+    width: 20%;
+}
+#sec2p2
+{
+    transform: translate(8.3rem, 0.7rem);
+}
+#sec2p3
+{
+    transform: translate(16rem, -1.4rem);
+}
+#sec2p4
+{
+    transform: translate(23.6rem, -4.5rem);
+}
+.section2ProfileContainer+a button
+{
+    border: 5px solid white;
+    color: white;
+    padding: 11px 31px;
+    font-size: 22px;
+    border-radius: 7px;
+    font-weight: bold;
+    transform: translate(147%, 130%);
+}
+.sec2Btn
+{
+    background-color: black;
+}
+.section2ProfileContainer+a button:hover
+{
+    background: white;
+    color: black;
+}
+
+/* section 3 */
+.section3
+{
+    height: 82%;
+    width: 100.4%;
+    background: radial-gradient(  at 60% 50%, #27a6e5, #185799);
+}
+.section3Div
+{
+    transform: translate(-10%, 17.5%);
+    float: left;
+}
+.section3ProfileContainer
+{
+    transform: translate(-2%, -8rem);
+    width: 80%;
+    height: 17.5%;
+}
+.sec3Profile1
+{
+    background-position: -132.5% 40.1%;
+}
+.sec3Profile2
+{
+    background-position: 33.5% -78.5%;
+}
+.sec3Profile3
+{
+    background-position: 66.5% -78.9%;
+}
+.sec3Profile4
+{
+    background-position: 99.5% 40.1%;
+}
+.sec3Btn
+{
+    background: transparent;
+}
+.section3Div h1
+{
+    padding: 0px;
+    transform: translateY(-166px);
+}
+.section3Div p
+{
+    padding: 0px;
+    transform: translateY(-143px);
+}
+.section2ProfileContainer p
+{
+    font-size: 13px;
+    line-height: 15px;
+}
+#sec3p1
+{
+    transform: translate(0.5rem, 0.7rem);
+} 
+#sec3p2
+{
+    transform: translate(7.5rem, 0.7rem);
+    width: 28%;
+} 
+#sec3p3
+{
+    transform: translate(16.5rem, 0.7rem);
+} 
+#sec3p4
+{
+    transform: translate(24.5rem, 0.7rem);
+}    
+.section3ProfileContainer+a button
+{
+    transform: translate(4%, -219%);
+}
+.section3 img
+{
+    width: 28%;
+    transform: translate(-21%,14%);
+}
+
+/* section4 */
+.section4
+{
+    height: 100%;
+    width: 100.4%;
+    background: radial-gradient( at 40% 50%, #373739, black);
+}
+.section4 img
+{
+    width: 32%;
+    transform: translate(-140%,16%);
+}
+.section4Div
+{
+    transform: translate(148%, -52.5%);
+}
+#section4P
+{
+    line-height: 31px;
+    width: 88%;
+    font-size: 24px;
+}
+.section4ProfileContainer
+{
+    transform: translate(15%, 1rem);
+    width: 80%;
+    height: 29.5%;
+}
+.section4ProfileContainer div
+{
+    width: 19%;
+    height: 31%;
+    float: right;
+}
+.sec4Profile1
+{
+    background-position: 99.5% 80.1%;
+}
+.sec4Profile2
+{
+    background-position: 66.5% -39.9%;
+}
+.sec4Profile3
+{
+    background-position: 33.5% -39.5%;
+}
+.sec4Profile4
+{
+    background-position: -132.5% 80%;
+}
+.sec4Profile5
+{
+    background-position: 33.5% -19.9%;
+    transform: translateY(-143px);
+}
+.sec4Profile6
+{
+    background-position: 0.5% 100%;
+    transform: translateY(-143px);
+}
+#sec4p1
+{
+    transform: translate(0.5rem, 0.7rem);
+} 
+#sec4p2
+{
+    transform: translate(7.5rem, 0.7rem);
+    width: 28%;
+} 
+#sec4p3
+{
+    transform: translate(16.5rem, -4.2rem);
+} 
+#sec4p4
+{
+    transform: translate(24.5rem, -9rem);
+} 
+#sec4p5
+{
+    transform: translate(16.5rem, -4.2rem);
+} 
+#sec4p6
+{
+    transform: translate(24.5rem, -9rem);
+} 
+#sec3Btn
+{
+    background-color: black;
+    transform: translate(170%, 130%)
+}
+#sec3Btn:hover
+{
+    background: white;
+    color: black;
+}
+
+/* section 5 */
+.section5
+{
+    height: 100%;
+    width: 100.4%;
+    background: radial-gradient(  at 60% 50%, #27a6e5, #185799);
+}
+.section5Div
+{
+    transform: translate(57%, -9.5%);
+}
+#section5P
+{
+    width: 88%;
+    position: absolute;
+    font-size: 24px;
+}
+.section5 img
+{
+    width: 32%;
+    transform: translate(171%,8%);
+    position: absolute;
+}
+.section5ProfileContainer
+{    
+    transform:translate(-5%, 12rem);
+    width: 97%;
+    height: 25.5%;
+}
+.section5ProfileContainer div
+{
+    width: 16%;
+    height: 36%;
+}
+.sec5Profile1
+{
+    background-position: 0.5% 20.1%;
+    transform: translate(10px, 96px);
+}
+.sec5Profile2
+{
+    background-position: 33.5% -98.9%;
+}
+.sec5Profile3
+{
+    background-position: 66.5% -98.5%;
+}
+.sec5Profile4
+{
+    background-position: -165.5% 20%;
+}
+.sec5Profile5
+{
+    background-position: 66.5% -19.9%;
+    transform: translateY(3px);
+}
+.section5ProfileContainer +a button 
+{
+    transform: translate(-9rem, 24rem);
+}
+#sec5p4
+{
+    transform: translate(25.5rem, -1.3rem);
+}
+
+/* section 6 */
+.section6
+{
+    height: 76%;
+    width: 100.4%;
+    background: white;
+}
+#servicesProfile2
+{
+    height: 35%;
+    width: 50%;
+    transform: translate(31rem, 15rem);
+}
+.section6 h1
+{
+    font-size: 89px;
+    width: 16%;
+    transform: translate(50rem, 10rem);
+    font-family: system-ui;
+    color: #00acdc;
+}
+.section6 div p+div
+{
+    transform: translate(0px, 1rem);
+    width: 61%;
+    height: 34%;
+}
+.section6 div div
+{
+    width: 16%;
+    height: 52%;
+    float: left;
+    background-color: #b3b3b3;
+    margin: 0% 4.5%;
+    border-radius: 100px;
+}
+.serviceSec1
+{
+    background: url(/img/icons-perdy.svg);
+   background-size: 407%;
+    background-position: 33.5% 0.1%;    
+}
+.serviceSec2
+{
+    background: url(/img/icons-perdy.svg);
+   background-size: 407%;
+    background-position: 66.5% 0.1%;
+}
+.serviceSec3
+{
+    background: url(/img/icons-perdy.svg);
+   background-size: 407%;
+    background-position: 99.5% 0.1%;
+}
+.serviceSec4
+{
+    background: url(/img/icons-perdy.svg);
+   background-size: 407%;
+    background-position: 132.5% 0.1%;
+}
+#servicesProfile2 button
+{
+    font-size: 14px;
+    width: 16%;
+    height: 18%;
+    font-weight: bold;
+    text-align: center;
+    -webkit-text-stroke: thin;
+    letter-spacing: 1.3px;
+    font-family: sans-serif;
+    border-radius: 7px;
+    line-height: 17px;
+    background: white;
+}
+#btn1
+{
+    transform: translate(2.8rem, 1.7rem);
+    border: 3px solid #77b950;
+    color: #77b950;
+}
+#btn1:hover
+{
+    background:  #77b950;
+    color: white;
+}
+#btn2
+{
+    transform: translate(7.5rem, 1.7rem);
+    color: #ffb56a;
+    border: 3px solid #ffb56a;
+}
+#btn2:hover
+{
+    background: #ffb56a;
+    color: white;
+}
+#btn3
+{
+    transform: translate(13rem, 1.7rem);
+    color:#78c6e1;
+    border: 3px solid#78c6e1;
+}
+#btn3:hover
+{
+    background: #78c6e1;
+    color: white;
+}
+#btn4
+{
+    transform: translate(18.5rem, 1.7rem);
+    color:#f14852;
+    border: 3px solid#f14852;
+}
+#btn4:hover
+{
+    background: #f14852;
+    color: white;
+}
+
+
+/* last one */
+
+.lastOneDiv
+{
+  height: 76%;
+  width: 100%;
+  background-color: #0097D6;
+  transform: translateY(-44%) scaleX(1.0085);
+  clip-path: polygon(50% 26%,100% 38%,100% 100%,0 100%,0% 38%);
+
+}
+.buildings
+{
+  transform:translate(20.4rem, 21rem) scale(0.65);
+}
+.light
+{
+  transform: translate(17%, -30%) scale(.6);
+  position: relative;
+  z-index: -1;
+  animation: lightsAnimation 1.8s infinite ease-in-out;
+}
+.light+div
+{
+  height: 27.5%;
+  background-color: black;
+  width: 100%;
+  transform: translate(0rem, -17rem);
+}
+.ship
+{
+  width: 16%;
+  transform: translate(23rem, -7.7rem);
+  animation-name: shipMoving;
+  animation-delay: 3s;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+}
+.compName
+{
+  height: 27%;
+  transform: translate(24rem, -4rem);
+  width: 14%;
+}
+.compName img{
+  height: 94%;
+  width: 19%;
+}
+.compName::after
+{
+  content: 'CreativeMob, Inc.';
+  float: right;
+  color: white;
+  clear: both;
+  transform: translate(-37px, 12px);
+  font-size: 21px;
+  font-family: system-ui;
+}
+.AboutMedia
+{
+  float: left;
+  height: 32%;
+  width: 3.9%;
+  background-color: white;
+  transform: translate(59rem, -8rem);
+  background: url(/img/connect/icons-connect.svg);
+  background-size: 315px;
+  background-position: -160px -2px;
+  border-radius: 36px;
+}
+.AboutMedia2
+{
+  float: left;
+  height: 32%;
+  width: 3.9%;
+  background-color: white;
+  transform: translate(61rem, -8rem);
+  border-radius: 36px;
+  background: url(/img/connect/icons-connect.svg);
+  background-size: 315px;
+  background-position: -238px -2px;
+}
+.AboutMedia:hover
+{
+  background-position: -160px -83px;
+}
+.AboutMedia2:hover
+{
+  background-position: -238px -83px;
+}
+.address
+{
+  height: 23%;
+  width: 11%;
+  float: left;
+  transform: translate(77rem, -7rem);
+  color: #b3b3b3;
+}
+.address img
+{
+  height: 80%;
+  width: 19%;
+}
+.address::after
+{
+  content: "4655 Ruffner St. Suite 220 San Diego, CA 92111";
+  float: left;
+  transform: translate(48px, -42px);
+}
+.address+p
+{
+  transform: translate(53%, 51px);
+  color: #e7e7e7;
+  width: 51%;
+}
+
+/* key frames */
+/* lightning animation */
+@keyframes lightsAnimation
+{
+  0%
+  {
+    opacity: 0.4;
+  }
+  100%
+  {
+    opacity: 1.0;
+  }
+}
+
+/* feedBack msgBox animation */
+@keyframes bounce
+{
+    0% ,100%
+    {
+        opacity:1;
+    }
+    60%
+    {
+        opacity: .5;
+    }
+}
+
+/* ship moving animation */
+@keyframes shipMoving 
+{
+  0% {
+    transform: translate(23rem, -7.7rem);
+}
+
+50% {
+    transform: translate(-20rem, -7.7rem);
+}
+100% {
+    transform: translate(23rem, -7.7rem);
+}
+
+}
