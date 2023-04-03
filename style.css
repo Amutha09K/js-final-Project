@@ -8,6 +8,10 @@ html, body {
   .example::-webkit-scrollbar {
       display: none;
   }
+  button
+  {
+    cursor: pointer;
+  }
 
   .parent
   {
@@ -84,6 +88,7 @@ html, body {
     border-radius: 5vw;
     background-size: 3.5vw;
     background-position: 1.2vw 1vh;
+    cursor: pointer;
   }
 
   #menuIcon:hover
@@ -346,7 +351,7 @@ html, body {
 .mobster
 {
     height: 27%;
-    transform: translateY(-48vh);
+    transform: translateY(-24vh);
 }
 .mobster > div
 {
@@ -357,7 +362,7 @@ html, body {
     height: 33vh;
     width: 13vw;
     overflow: hidden;
-    transform: translate(17vw, 31.5vh) scale(1.8);
+    transform: translate(17vw, 8vh) scale(1.8);
     position: relative;
     z-index: 2;
 }
@@ -366,7 +371,7 @@ html, body {
     height: 57%;
     width: 7.5%;
     overflow: hidden;
-    transform: translate(15.5vw, 15vh);
+    transform: translate(15.5vw, -9vh);
     position: relative;
     z-index: 1;
 }
@@ -377,7 +382,7 @@ html, body {
     overflow: hidden;
     position: relative;
     z-index: 1;
-    transform: translate(14vw, 15vh);
+    transform: translate(14vw, -9vh);
 }
 .mobster4
 {
@@ -386,14 +391,14 @@ html, body {
     overflow: hidden;
     position: relative;
     z-index: 1;
-    transform: translate(11.6vw, 17.5vh) scale(1.22) scaleX(.9) scaleY(.9);
+    transform: translate(11.6vw, -6vh) scale(1.22) scaleX(.9) scaleY(.9);
 }
 .mobster5
 {
     height: 60%;
     width: 6%;
     overflow: hidden;
-    transform: translate(9.9vw, 17vh);
+    transform: translate(9.9vw, -7vh);
 }
 .mobster6
 {
@@ -402,7 +407,7 @@ html, body {
     overflow: hidden;
     position: relative;
     z-index: 1;
-    transform: translate(8.5vw, 29.5vh) scale(.9) scaleX(1.07);
+    transform: translate(8.5vw, 5vh) scale(.9) scaleX(1.07);
 }
 .mobster7
 {
@@ -411,7 +416,7 @@ html, body {
     overflow: hidden;
     position: relative;
     z-index: 0;
-    transform: translate(0.9vw, 21vh);
+    transform: translate(0.9vw, -3vh);
 }
 .mobster8
 {
@@ -420,7 +425,7 @@ html, body {
     overflow: hidden;
     position: relative;
     z-index: 1;
-    transform: translate(-7.2vw, 20vh) scale(1.1) scaleY(1.05);
+    transform: translate(-7.2vw, -5vh) scale(1.1) scaleY(1.05);
 }
 .mobster9
 {
@@ -429,7 +434,7 @@ html, body {
     overflow: hidden;
     position: relative;
     z-index: 1;
-    transform: translate(72vw, -9vh) scale(1.1);
+    transform: translate(72vw, -33.8vh) scale(1.1);
 }
 
 /* set mobster image style */
