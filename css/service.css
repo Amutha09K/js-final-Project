@@ -93,6 +93,7 @@ html, body {
       border-radius: 67px;
       background-size: 67px;
       background-position: 23px 13px;
+      cursor: pointer;
     }
     #menuIcon:hover
     {
