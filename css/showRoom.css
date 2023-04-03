@@ -2,6 +2,11 @@
 {
     margin-left: 0%;
 }
+button
+{
+  transition: 0.5s;
+  cursor: pointer;
+}
 
 /* feedback  */
 #pCreation

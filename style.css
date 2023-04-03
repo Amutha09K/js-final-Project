@@ -8,7 +8,7 @@ html, body {
   .example::-webkit-scrollbar {
       display: none;
   }
-  button, .viewProjBtn
+  button
   {
     cursor: pointer;
   }

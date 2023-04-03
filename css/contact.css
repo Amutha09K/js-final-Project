@@ -9,6 +9,11 @@ html, body {
   {
     margin: 0px;
   }
+  button
+  {
+    transition: 0.5s;
+    cursor: pointer;
+  }
 
   .example::-webkit-scrollbar
   {

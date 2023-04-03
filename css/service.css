@@ -9,6 +9,11 @@ html, body {
   {
     margin: 0px;
   }
+  button
+  {
+    transition: 0.5s;
+    cursor: pointer;
+  }
 
   .example::-webkit-scrollbar
   {
@@ -599,7 +604,8 @@ html, body {
 #sec3Btn
 {
     background-color: black;
-    transform: translate(170%, 130%)
+    transform: translate(170%, 130%);
+    color: white;
 }
 #sec3Btn:hover
 {
