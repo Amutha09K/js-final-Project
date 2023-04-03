@@ -107,6 +107,10 @@ html, body {
   {
     padding-top: 13vh;
   }
+  .buildingContainerWithLight
+  {
+
+  }
   .welcome-text
   {
       font-family: gothamlight, arial, sans-serif, gothambold;
@@ -136,6 +140,13 @@ html, body {
     width: 100vw;
     height: 27vh;
     transform: scaleY(1.2);
+
+    /* position: absolute;
+    top: 31vh;
+    left: 2.5vh;
+    width: 1874px; */
+    height: 31vh;
+    /* transform: scaleY(1.2); */
   }
   .home-text
   {
